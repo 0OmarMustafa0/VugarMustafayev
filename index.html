@@ -41,7 +41,7 @@
     --second-bg-color: #202020;
     --text-color:#fff;
     --second-color:#ccc;
-    --main-color:darkolivegreen;
+    --main-color: rgb(210 105 30) 	;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -169,7 +169,7 @@ section
 
 .home-text p
 {
-    color: var(--second-color);
+    color: whitesmoke;
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 40px;
@@ -189,7 +189,7 @@ section
 .btn
 {
   display: inline-block;
-  padding: 20px 50px;
+  padding: 10px 20px;
   background: var(--main-color);
   border-radius: 50px;
   color: var(--text-color);
@@ -238,19 +238,38 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1.5rem;
-
+    gap: 3rem;
+    background-color: transparent;   
 }
+
+
 .about-img img{
-    max-width: 530px;
+    max-width: 600px;
     height: auto;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 50px;
+    background-position: left top;
+
+}
+.about-img img:hover{
+    transform: scale(0.98);
+    cursor: pointer;
+    
 }
 .about-text h2{
     font-size: var(--h2-font);
     line-height: 1;
+    
 }
+
+.about-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    
+ 
+}
+
 .about-text h4{
     font-size: 24px;
     font-weight: 600;
@@ -259,21 +278,22 @@ header.sticky{
     margin: 15px 0 30px;
 }
 .about-text p{
-    color: var(--second-color);
-    font-size: var(--p-font);
-    line-height: 1.8;
-    margin-bottom: 4rem;
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
 }
 
+
 .services{
-    background: var(--second-bg-color);
+    background: black;
 }
 .main-text{
     text-align: center ;
 
 }
 .main-text p{
-    color: var(--second-color);
+    color: whitesmoke;
     font-size: 15px;
     margin-bottom: 15px;
 
@@ -292,9 +312,11 @@ header.sticky{
 }
 .box{
    background: var(--bg-color);
-   padding:  35px 45px; 
-   border-radius: 8px;
+   padding:  40px 30px; 
+   border-radius: 50px;
    transition: all .45s ease;
+   margin-bottom: 20px;
+   
 }
 .s-icons i{
     font-size: 32px;
@@ -303,11 +325,11 @@ header.sticky{
 .box h3{
     font-size: 24px;
     font-weight: 600;
-    color: var(--text-color);
+    color: whitesmoke;
     margin-bottom: 15px;
 }
 .box p{
-    color: var(--second-color);
+    color: whitesmoke;
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 25px;
@@ -315,8 +337,8 @@ header.sticky{
 .read{
     display: inline-block;
     padding: 8px 18px;
-    background: darkolivegreen;
-    color: var(--second-color);
+    background: chocolate;
+    color: whitesmoke;
     font-size: 14px;
     font-weight: 500;
     border-radius: 8px;
@@ -328,16 +350,21 @@ header.sticky{
     color: var(--text-color);
 }
 .box:hover{
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     cursor: pointer;
 }
-
+.portfolio{
+    background-color: black;
+}
 .portfolio-content{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 align-items: center; 
 gap: 2.5rem;
 margin-top: 5rem;   
+}
+.layihe1{
+    background-color: transparent;
 }
 
 .row{
@@ -371,7 +398,7 @@ margin-top: 5rem;
     transition: height 0.5s;
 }
 .layer h5{
- font-size: 20px;
+ font-size: 30px;
  font-weight: 600;
   margin-bottom: 15px;  
 }
@@ -412,32 +439,34 @@ margin-top: 5rem;
     margin: 18px 0;
     font-size: 20px;
     font-weight: 600;
+
 }
 .contact-text h2{
-    font-size: var(--h2-font);
+    font-size: 15mm;
     line-height: 1;
+    margin-bottom: 15px;
 }
 .contact-text p{
    color: var(--second-color);
-   font-size: var(--p-font);
+   font-size: 5mm;
    line-height: 1.8;
-   margin-bottom: 30px; 
+   margin-bottom: 20px; 
 }
 .list{
-  margin-bottom: 2.8rem;  
+  margin-bottom: 1.5rem;  
 }
 .list li{
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .list li a{
     display: block;
-    color: var(--second-color);
+    color: whitesmoke;
     font-size: 14px;
     transform: all .45s ease;
 }
 .list li a:hover{
 color: var(--text-color);
-transform: translateX(5px);
+transform: translateX(3px) translateY(-3px);
 }
 .contact-icons i{
    height:  45px;
@@ -582,8 +611,8 @@ background: var(--main-color) ;
         <ul class="navlist">
             <li><a href="#home" class="active" > Ana Səhifə </a></li>
             <li><a href="#about" > Haqqımda </a></li>
-            <li><a href="#services" > Xidmətlər </a></li>
-            <li><a href="#portfolio" > Layihələrim </a></li>
+            <li><a href="#services" > Layihələrim </a></li>
+            <li><a href="#portfolio" > Qalareya </a></li>
             <li><a href="#contact" > Əlaqə </a></li>
         </ul>
 
@@ -605,30 +634,85 @@ background: var(--main-color) ;
                 <a href="#portfolio" class="btn2"><span><i class='bx bx-play'></i></span> Layihələrlə tanış olmaq </a>
 
            </div>
+         
         </div>
     </div>
 </section>
 
 <!--about section design-->
 <section class="about" id="about">
-   <div class="about-img">
-    <img src="https://raw.githubusercontent.com/VugarMustafayevv/VugarMustafayev/main/VugarMustafayev1.jpg" alt="Teknik Hata Oluştu">
- 
+    
+   <div class="about-img" >
+    <img  align="center" src="https://r.resimlink.com/-_GAZT.jpg" alt="Teknik Hata Oluştu" > <br><br>
+    <img  align="center" src="https://r.resimlink.com/yMNoRxH.jpg"> <br><br>
+    <img  align="center" src="https://r.resimlink.com/x8H9_vw5n0uQ.jpg"> <br><br>
 
-   </div>
+   <br> <a href="#services" align="center" class="btn"> Layihələrim haqqında məlumat almaq </a>
+  
+
+</div>
 
    <div class="about-text">
           <h2>Mənim <span>Haqqımda</span></h2>
           <h4>Şəki Tarix-Diyarşünaslıq Muzeyi Müdiri</h4>
-          <p>Haqqımda....</p>
-          <a href="#services" class="btn"> Sahəmlə bağlı məlumat almaq </a>
+          <p></p>      
+                <h2 align="center">Təhsil <br><br></h2>
+                <div class="box" align="center">
+                    Şəkişəhər 8 no-lu Rus orta məktəb Azərbaycan/Şəki/M.Əliyevk.ev 4/4 <br>
+                        <b>1985 -1995</b>
+                </div>
+                <div class="box" align="center">
+                    İstanbul Universiteti Rus dili vəədəbiyyatıfakulteti <br>
+                       <b>1996–2000</b>   
+                </div>
+                <div class="box" align="center">
+                    Marmara Universiteti sosio-psixologiya/maqistratura <br>
+                    <b>2000 -2001</b>
+                </div>
+               
+                <h2 align="center"> <br> İŞ TƏCRÜBƏSİ <br><br></h2>
+                <div class="box" align="center">
+                    Bakı İslam Universiteti *** Zaqatala şöbəsi<br>               
+                    <b> 2001–2006 </b><br>
+                    Komendant 
+                </div> 
+                <div class="box" align="center">
+                    Baş Pasport,Qeydiyyatvəmiqrasiyaİdarəsi *** Şəki şöbəsi<br>
+                    <b> 2006–2013 </b><br>
+                    Kompuyter işi
+                </div>
+                <div class="box" align="center">
+                    Baxi İtaliyan istilik sistemləri *** Bakı  <br>
+                    <b> 2013–2018 </b><br>
+                    Audit
+                </div>
+                <div class="box" align="center">
+                    Şəxsi Biznes *** Şəki <br>
+                    <b> 2018–2021 </b><br>
+                    Kiçik biznes  
+                </div>
+              
+                <h2 align="center"><br> HOBBİLƏR <br><br></h2>
+                <div class="box" align="center">
+                    Səyahət etmək  
+                </div>
+                <div class="box" align="center">
+                    Kitab oxumaq
+                </div>
+                <div class="box" align="center">
+                    Araşdırma etmək
+                </div>
+         
+          
+          
    </div>
+ 
 </section>
 
 <!--service section design-->
 <section class="services" id="services">
     <div class="main-text">
-        <h2><span>Mənim</span>  Sahəm</h2>
+        <h2><span>Layihələrim</span>  Haqqında </h2>
         
     </div>
 
@@ -639,7 +723,7 @@ background: var(--main-color) ;
              </div>
              <h3>Turizim Agentliyi</h3>
              <p>Məlumat........</p>
-             <a href="#" class="read">Daha çox oxu</a>
+             <a href="#layihe1" class="read">Daha çox oxu</a>
          </div>
 
          <div class="box">
@@ -662,16 +746,31 @@ background: var(--main-color) ;
     </div>
 </section>
 
+<!--Layihe1 section design-->
+<section class="layihe1" id="layihe1">
+   
+      <div class="main-text">
+               <h2>Layihe ad <br><br></h2>
+      </div>
+      <div class="layihe1-content">
+               
+      </div>
+      <div class="about-img" >
+        <img align="center" src="https://r.resimlink.com/-_GAZT.jpg" alt="Teknik Hata Oluştu" > <br><br>
+    
+      </div>
+</section>
+
  <!---portfolio section design-->
 <section class="portfolio" id="portfolio">
     <div class="main-text">
-        <p> Portfolio </p>
+        
         <h2><span>Sonuncu </span>  Layihələrim </h2>     
     </div>
 
     <div class="portfolio-content">
         <div class="row">
-            <img src="https://raw.githubusercontent.com/VugarMustafayevv/VugarMustafayev/main/VugarMustafayev1.jpg" >
+            <img src="https://r.resimlink.com/-_GAZT.jpg" >
             <div class="layer">
                 <h5> Yenilikci proje </h5>
                 <p>Haqqında</p>
@@ -680,7 +779,7 @@ background: var(--main-color) ;
         </div>
 
         <div class="row">
-            <img src="https://raw.githubusercontent.com/VugarMustafayevv/VugarMustafayev/main/VugarMustafayev2.jpg" >
+            <img src="https://r.resimlink.com/yMNoRxH.jpg" >
             <div class="layer">
                 <h5> Yenilikci proje </h5>
                 <p>Haqqında</p>
@@ -689,7 +788,7 @@ background: var(--main-color) ;
         </div>
 
         <div class="row">
-            <img src="https://raw.githubusercontent.com/VugarMustafayevv/VugarMustafayev/main/VugarMustafayev3.jpg" >
+            <img src="https://r.resimlink.com/x8H9_vw5n0uQ.jpg" >
             <div class="layer">
                 <h5> Yenilikci proje </h5>
                 <p>Haqqında</p>
@@ -703,7 +802,6 @@ background: var(--main-color) ;
 <section class="contact" id="contact">
      <div class="contact-text">
          <h2>Mənimlə <span> əlaqə qurmaq üçün</span></h2>
-         <h4>Əgər yeni bir fikrin varsa</h4>
          <p>Turizim Agentliyi Əməkdaşı</p>
          <div class="list">
             <li><a href="#">+994703530503</a></li>
@@ -713,7 +811,7 @@ background: var(--main-color) ;
 
          <div class="contact-icons">
              <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
-             <a href="#"><i class='bx bxl-instagram' ></i></a>
+             <a href="https://instagram.com/0omarmustafa0?igshid=ZDdkNTZiNTM="><i class='bx bxl-instagram' ></i></a>
              <a href="#"><i class='bx bxl-twitter' ></i></a>
              <a href="#"><i class='bx bxl-youtube' ></i></a>
          </div>
