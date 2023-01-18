@@ -4,23 +4,8 @@
 <head>
    
   <script>
-    const header = document.querySelector(" header");
-    window.addEventListener (" scroll ", function() {
-        header.classList.toggle(" sticky ",window.scrollY > 100);
-    });
-    
-    let menu =document.querySelector(' #menu-icon ');
-    let navlist = document.querySelector(' .navlist ');
 
-    menu.onclick = () => {
-        menu.classList.toggle(' bx-x');
-        navlist.classList.toggle('open');
-    };
-
-    window.onscroll = () => {
-        menu.classList.remove('bx-x');
-        navlist.classList.remove('open');
-    }
+  
    </script>  
 
     <style>
@@ -233,15 +218,21 @@ header.sticky{
     border-bottom: 1px solid#ffffff1a;
     padding: 12px 15%;
 }
-.about{
-    
+
+.about{ 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
     background-color: transparent;   
 }
-
+.about2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    background-color: black;
+}
 
 .about-img img{
     max-width: 600px;
@@ -249,25 +240,25 @@ header.sticky{
     width: 100%;
     border-radius: 50px;
     background-position: left top;
+}
 
+.about-img img:hover{
+    transform: scale(0.98);
+    cursor: pointer;  
 }
 .about-img img:hover{
     transform: scale(0.98);
     cursor: pointer;
-    
 }
 .about-text h2{
     font-size: var(--h2-font);
-    line-height: 1;
-    
+    line-height: 1;    
 }
 
 .about-text .box{
     margin-bottom: 20px;
     border-radius: 100;
     background-color: var(--main-color);
-    
- 
 }
 
 .about-text h4{
@@ -277,12 +268,15 @@ header.sticky{
     line-height: 1.7;
     margin: 15px 0 30px;
 }
+
 .about-text p{
     color: whitesmoke;
     font-size: 5mm;
     line-height: 1;
     margin-bottom: 2rem;
 }
+
+
 
 
 .services{
@@ -318,11 +312,87 @@ header.sticky{
    margin-bottom: 20px;
    
 }
+.box1{
+    background: var(--bg-color) ;
+    padding: 40px 30px;
+    border-radius: 50px;
+    transition: all .45s ease;
+    margin-bottom: 20px;
+    background-image: url(https://r.resimlink.com/BcG8w.png);
+    background-size: cover;
+    background-position: center;
+}
+.box2{
+    background: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 50px;
+    transition: all .45s ease;
+    margin-bottom: 20px;
+    background-image: url();
+    background-size: cover ;
+    background-position: center;
+}
+.box3{
+    background: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 50px;
+    transition: all .45s ease;
+    margin-bottom: 20px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+
+}
+.box4 {
+    background: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 50px;
+    transition: all .45s ease;
+    margin-bottom: 20px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+.s-icons1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.box1:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.box2:hover{
+transform: translateY(-10px);
+cursor: pointer;
+}
+.box3:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 .s-icons i{
     font-size: 32px;
     margin-bottom: 20px;
 }
+
 .box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+.box1 h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+.box2 h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+.box3 h3{
     font-size: 24px;
     font-weight: 600;
     color: whitesmoke;
@@ -333,6 +403,24 @@ header.sticky{
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 25px;
+}
+.box1 p{
+    color: whitesmoke;
+    font-size: 1rem ;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box2 p{
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box3 p{
+     color: whitesmoke;
+     font-size: 1rem;
+     line-height: 1.8;
+     margin-bottom: 25px;
 }
 .read{
     display: inline-block;
@@ -363,9 +451,9 @@ align-items: center;
 gap: 2.5rem;
 margin-top: 5rem;   
 }
-.layihe1{
-    background-color: transparent;
-}
+
+
+
 
 .row{
  position: relative;
@@ -563,7 +651,7 @@ background: var(--main-color) ;
     .navlist{
         position: absolute;
         top: -1000px;
-        right: 0;
+        right: 0;          
         left: 0;
         display: flex;
         flex-direction: column;
@@ -589,7 +677,117 @@ background: var(--main-color) ;
         top: 100%;
     }
 }
+.flip-card:nth-of-type(2) .flip-card-front,
+ .flip-card:nth-of-type(2) .flip-card-back{
+    background-image: url(https://r.resimlink.com/yMNoRxH.jpg);
+}
+.flip-card:nth-of-type(3) .flip-card-front,
+ .flip-card:nth-of-type(3) .flip-card-back{
+    background-image: url(https://r.resimlink.com/x8H9_vw5n0uQ.jpg);
+}
+.flip-card{
+   margin: 20px;
+   position: relative;
+   transform-style: preserve-3d;
+   perspective: 1000px;
+     
+}
+.layihe1 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
+
+.layihe1 {
+ margin: 0;
+ padding: 20px;
+ min-height: 100vh;
+ background-color: transparent;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ flex: auto;
+ 
+}
+
+.flip-card-front,.flip-card-back{
+    width: 400px;
+    min-height: 700px;
+    height: auto;
+    background-color: #000000;
+    background-image: url(https://r.resimlink.com/-_GAZT.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    float: left;
+}
+
+.flip-card{
+    float: left;
+    padding-left: 40px;
+    padding-bottom: 100px;
+   
+}
+
+.flip-card-front{
+    transform: rotateY(0deg);
+    bottom: 40px;
+}
+.flip-card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    
+}
+
+.flip-card-front::after,.flip-card-back::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+   
+}
+.flip-card-front .inner,.flip-card-back .inner{
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    z-index: 2;
+}
+.inner .icon{
+     width: 80px;
+     margin-bottom: 20px;
+}
+.inner h3{
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+.inner p{
+     color: #ffffff;
+     font-size: 16px;
+     line-height: 28px;
+}
+.flip-card:hover .flip-card-front{
+transform: rotateY(-180deg);
+}
+.flip-card:hover .flip-card-back{
+transform: rotateY(0deg);
+}
     </style>
 
 
@@ -628,7 +826,7 @@ background: var(--main-color) ;
            </div>
            <h1>Vüqar Mustafayev</h1>
            <h3> Şəki Tarix-Diyarşünaslıq Muzeyi <span> Müdiri </span></h3>
-           <p>Haqqımda Məlumat....</p>
+    
            <div class="button">
                 <a href="#about" class="btn"> Ətraflı məlumat almaq </a>
                 <a href="#portfolio" class="btn2"><span><i class='bx bx-play'></i></span> Layihələrlə tanış olmaq </a>
@@ -642,54 +840,55 @@ background: var(--main-color) ;
 <!--about section design-->
 <section class="about" id="about">
     
-   <div class="about-img" >
-    <img  align="center" src="https://r.resimlink.com/-_GAZT.jpg" alt="Teknik Hata Oluştu" > <br><br>
-    <img  align="center" src="https://r.resimlink.com/yMNoRxH.jpg"> <br><br>
-    <img  align="center" src="https://r.resimlink.com/x8H9_vw5n0uQ.jpg"> <br><br>
-
-   <br> <a href="#services" align="center" class="btn"> Layihələrim haqqında məlumat almaq </a>
-  
+   <div class="about-img" >  
+    <img  align="center" src="https://r.resimlink.com/x8H9_vw5n0uQ.jpg" alt="Teknik Hata Oluştu" > <br><br><br><br>
+    <img  align="center" src="https://r.resimlink.com/yMNoRxH.jpg"> <br><br><br><br>
+    <img  align="center" src=" https://r.resimlink.com/-_GAZT.jpg"> <br><br><br><br>
 
 </div>
 
    <div class="about-text">
           <h2>Mənim <span>Haqqımda</span></h2>
+       
           <h4>Şəki Tarix-Diyarşünaslıq Muzeyi Müdiri</h4>
           <p></p>      
                 <h2 align="center">Təhsil <br><br></h2>
                 <div class="box" align="center">
-                    Şəkişəhər 8 no-lu Rus orta məktəb Azərbaycan/Şəki/M.Əliyevk.ev 4/4 <br>
+                    Şəki şəhər 8 no-lu rus orta məktəb * Şəki<br>
                         <b>1985 -1995</b>
                 </div>
                 <div class="box" align="center">
-                    İstanbul Universiteti Rus dili vəədəbiyyatıfakulteti <br>
+                    İstanbul Universiteti Rus dili və ədəbiyyat fakulteti * İstanbul <br>
                        <b>1996–2000</b>   
                 </div>
-                <div class="box" align="center">
-                    Marmara Universiteti sosio-psixologiya/maqistratura <br>
-                    <b>2000 -2001</b>
-                </div>
+              
                
                 <h2 align="center"> <br> İŞ TƏCRÜBƏSİ <br><br></h2>
                 <div class="box" align="center">
-                    Bakı İslam Universiteti *** Zaqatala şöbəsi<br>               
+                    Bakı İslam Universiteti * Zaqatala şöbəsi<br>               
                     <b> 2001–2006 </b><br>
                     Komendant 
                 </div> 
                 <div class="box" align="center">
-                    Baş Pasport,Qeydiyyatvəmiqrasiyaİdarəsi *** Şəki şöbəsi<br>
+                    Baş Pasport, Qeydiyyat və miqrasiya İdarəsi * Şəki şöbəsi<br>
                     <b> 2006–2013 </b><br>
                     Kompuyter işi
                 </div>
                 <div class="box" align="center">
-                    Baxi İtaliyan istilik sistemləri *** Bakı  <br>
+                    Baxi İtaliyan istilik sistemləri * Bakı  <br>
                     <b> 2013–2018 </b><br>
                     Audit
                 </div>
                 <div class="box" align="center">
-                    Şəxsi Biznes *** Şəki <br>
+                    Şəxsi Biznes * Şəki <br>
                     <b> 2018–2021 </b><br>
                     Kiçik biznes  
+                </div>
+                <div class="box" align="center">
+                     Azərbaycan Respublikasının Dövlət Turizm Agentliyi <br>
+                     Şəki Tarix-Diyarşünaslıq Muzeyi * Şəki <br>
+                     <b> 2021</b><br>
+                     Müdir
                 </div>
               
                 <h2 align="center"><br> HOBBİLƏR <br><br></h2>
@@ -708,6 +907,30 @@ background: var(--main-color) ;
    </div>
  
 </section>
+<!--AboutMuseum-->
+<section class="about" id="about">
+
+     <div class="about-text">
+        <h2 > Şəki Tarix-Diyarşünaslıq Muzeyi <span> Haqqında</span></h2>
+        <br>
+         <br>
+        <div class="box" >
+            Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib.
+          
+        </div>
+    </div>
+
+    <div class="about-img" >
+
+        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br>
+        <br> <a href="#services"   class="btn"> Layihələrim haqqında məlumat almaq </a> 
+     </div> 
+
+    
+    
+</section>
 
 <!--service section design-->
 <section class="services" id="services">
@@ -717,48 +940,133 @@ background: var(--main-color) ;
     </div>
 
     <div class="services-content">
-         <div class="box">
-             <div class="s-icons">
-                <i class='bx bx-mobile-alt'></i>
+         <div class="box1">
+             <div class="s-icons1">
+                <i class='bx bx-buildings'></i>
+                
              </div>
-             <h3>Turizim Agentliyi</h3>
-             <p>Məlumat........</p>
-             <a href="#layihe1" class="read">Daha çox oxu</a>
+             <h3>Muzeylə bağlı layihələr</h3>
+             <p>Muzeyimizlə bağlı bir çox layihə <br> həyata keçirilmişdir...
+             <br>
+             <a href="#layihe1" class="read">Tanış olmaq</a>  
          </div>
 
-         <div class="box">
-            <div class="s-icons">
+         <div class="box2">
+            <div class="s-icons1">
                 <i class='bx bx-edit-alt' ></i>
             </div>
-            <h3>Turizim Agentliyi</h3>
-            <p>Məlumat....</p>
-            <a href="#" class="read">Daha çox oxu</a>
+            <h3>Muzeydə keçirilən tədbirlərlə <br> bağlı layihələr</h3>
+            <p>Muzeyimizdə bir çox mövzuda tədbirlər keçirilir ...</p>
+            <a href="#" class="read">Tanış olmaq</a>
         </div>
 
-        <div class="box">
-            <div class="s-icons">
+        <div class="box3">
+            <div class="s-icons1">
                 <i class='bx bx-code-alt' ></i>
             </div>
-            <h3>Turizim Agentliyi</h3>
-            <p>Məlumat....</p>
-            <a href="#" class="read">Daha çox oxu</a>
+            <h3>Muzeyimizdə keçirilən əlamətdar günlər</h3>
+            <p>Muzeyimizdə əlamətdar günlər yüksək diqqətlə qeyd olunur ...</p>
+            <a href="#" class="read">Daha çox məlumat al </a>
         </div>
+        
+        <div class="box4">
+            <div class="s-icons1">
+                <i class='bx bx-code-alt'></i>
+            </div>
+            <h3>   </h3>
+            <p>    </p>
+            <a href="#" class="read">Daha çox məlumat al </a>
+        </div>
+
+        <br>
+        
+        <div class="box5">
+            <div class="s-icons1">
+                <i class='bx bx-code-alt'></i>
+            </div>
+            <h3>   </h3>
+            <p>     </p>
+            <a href="#" class="read">Daha çox məlumat al </a>
+        </div>
+      
     </div>
+    
 </section>
 
 <!--Layihe1 section design-->
 <section class="layihe1" id="layihe1">
-   
-      <div class="main-text">
-               <h2>Layihe ad <br><br></h2>
-      </div>
-      <div class="layihe1-content">
-               
-      </div>
-      <div class="about-img" >
-        <img align="center" src="https://r.resimlink.com/-_GAZT.jpg" alt="Teknik Hata Oluştu" > <br><br>
-    
-      </div>
+       
+       
+  
+
+        
+        <div class="flip-card">
+            <div class="flip-card-front">
+                <div class="inner">
+                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <h3>xxxxxxxxxx</h3>
+                    <p>
+                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                    </p>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="inner">
+                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <h3>yyyyyyyyyy</h3>
+                    <p>
+                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-front">
+                <div class="inner">
+                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <h3>xxxxxxxxxx</h3>
+                    <p>
+                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                    </p>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="inner">
+                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <h3>yyyyyyyyyy</h3>
+                    <p>
+                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-front">
+                <div class="inner">
+                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <h3>xxxxxxxxxx</h3>
+                    <p>
+                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                    </p>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="inner">
+                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <h3>yyyyyyyyyy</h3>
+                    <p>
+                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                    </p>
+                </div>
+            </div>
+        </div>
+
+     
+      
+       
+       
 </section>
 
  <!---portfolio section design-->
@@ -795,6 +1103,8 @@ background: var(--main-color) ;
                 <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
+        
+        
     </div>
 </section>
 <!---portfolio section design-->
@@ -833,6 +1143,6 @@ background: var(--main-color) ;
 </section>
 
 
-
+     
 </body>
 </html>
