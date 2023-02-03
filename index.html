@@ -47,7 +47,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 22px 15%;
+    padding: 22px 15%; 
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
 }
@@ -98,6 +98,7 @@ section
     height: 100vh;
     width: 100%;
     background-color: black;
+    background-image: url();
     background-size: cover;
     background-position: center;
     display: flex;
@@ -122,6 +123,7 @@ section
     border-radius: 5px;
     background-color: var(--main-color);
     color: var(--text-color);
+   
 }
 
 .iki
@@ -165,9 +167,15 @@ section
     display: inline-flex;
     align-items: center;
     justify-content: center;
+ 
+}
+.button1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .container{
-    width: 96%;
+    width: 90%;
     max-width: 1200px;
     margin: 0px auto;
 }
@@ -182,10 +190,27 @@ section
   letter-spacing: 1px;
   font-weight: 600;
   transition:  all .45s ease;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
-
+.btn1{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    border-radius: 50px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+     transition: all .45s ease; 
+}
 .btn:hover{
     transform: scale(0.9);
+    box-shadow: 0px 0px black;
+}
+.btn1:hover{
+    transform: scale(0.9);
+    box-shadow: 0px 0px black;
 }
 .btn2{
     display: inline-flex;
@@ -195,6 +220,7 @@ section
     font-weight: 600;
     color: var(--text-color);
     margin-left: 35px;
+   
 }
 .btn2 span i{
     height: 60px;
@@ -209,9 +235,11 @@ section
     margin-left: 50px;
     margin-right: 15px;
     transition: all .45s ease;
+    
 }
 .btn2 span i:hover{
     transform: scale(0.9) translateX(5px);
+    box-shadow: 0px 0px black;
 }
 header.sticky{
     background-color: var(--bg-color);
@@ -224,7 +252,85 @@ header.sticky{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
-    background-color: transparent;   
+    background-color: transparent;  
+    width: auto;
+    width: 100%;
+    
+}
+
+.box1page1{
+    display: grid; 
+    align-items: center;
+    gap: 3rem;
+    background-color: black;
+    width: auto;
+    width: 100%;
+    box-shadow: 0px -25px 100px chocolate;
+}
+.box2page2{
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    background-color: transparent;
+    width: auto;
+    width: 100%;
+    box-shadow: 0px 25px 20px chocolate;
+}
+.box3page3{
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    background-color: black;
+    width: auto;
+    width: 100%;
+    box-shadow: 0px -25px 100px chocolate;
+ 
+}
+
+.box4page4{
+    display: grid;
+    align-items: center;
+    gap:  3rem;
+    background-color: transparent;
+    width: auto;
+    width: 100%;
+    box-shadow: 0px 25px 100px chocolate;
+}
+.box5page5{
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    background-color: black;
+    width: auto;
+    width: 100%;
+    box-shadow: 0px -25px 100px chocolate;
+}
+.box6page6{
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    background-color: transparent;
+    width: auto;
+    width: 100%;
+    box-shadow: 0px 25px 100px chocolate;
+}
+.box7page7{
+     display: grid;
+     align-items: center;
+     gap: 3rem;
+     background-color: black;
+     width: auto;
+     width: 100%;
+     box-shadow: 0px -25px 100px chocolate;
+}
+.box8page8{
+     display: grid;
+     align-items: center;
+     gap: 3rem;
+     background-color: transparent;
+     width: auto;
+     width: 100%;
+     box-shadow: 0px 25px 100px chocolate;
 }
 .about2{
     display: grid;
@@ -238,49 +344,331 @@ header.sticky{
     max-width: 600px;
     height: auto;
     width: 100%;
-    border-radius: 50px;
-    background-position: left top;
+    border-radius: 100px;
+    background-position: left top; 
 }
 
-.about-img img:hover{
-    transform: scale(0.98);
-    cursor: pointer;  
+.box1-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
+}
+.box2-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
+}
+.box3-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
+}
+.box4-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
+}
+.box5-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
+}
+.box6-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
+}
+.box7-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
+}
+.box8-img img{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 100px;
+    background-position: left top;
 }
 .about-img img:hover{
-    transform: scale(0.98);
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer; 
+    box-shadow: 10px 10px chocolate; 
+}
+.box1-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
     cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box2-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box3-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box4-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box5-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box6-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box7-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box8-img img:hover{
+    transform: translateY(-10px);
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
 }
 .about-text h2{
     font-size: var(--h2-font);
     line-height: 1;    
 }
-
+.box1-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.box2-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.box3-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.box4-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.box5-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.box6-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.box7-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.box8-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
 .about-text .box{
     margin-bottom: 20px;
     border-radius: 100;
     background-color: var(--main-color);
+    box-shadow: 10px 10px 5px black;
 }
-
+.box1-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px #ffffff1a;
+}
+.box2-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px black;
+}
+.box3-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow:  10px 10px 5px #ffffff1a;
+}
+.box4-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px black;
+}
+.box5-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px #ffffff1a;
+}
+.box6-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px black;
+}
+.box7-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px #ffffff1a;
+}
+.box8-text .box{
+    border-radius: 100;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px black;
+}
 .about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px; 
+}
+.box1-text h4{
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
     line-height: 1.7;
     margin: 15px 0 30px;
 }
+.box2-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.box3-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.box4-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.box5-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
 
+}
+.box6-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px ;
+}
+.box7-text h4{
+   font-size: 24px;
+   font-weight: 600;
+   color: var(--text-color);
+   line-height: 1.7;
+   margin: 15px 0 30px;
+}
+.box8-text h4{
+   font-size: 24px;
+   font-weight: 600;
+   color: var(--text-color);
+   line-height: 1.7;
+   margin: 15px 0 30px;
+}
 .about-text p{
     color: whitesmoke;
     font-size: 5mm;
     line-height: 1;
     margin-bottom: 2rem;
 }
-
-
-
-
+.box1-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.box2-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.box3-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.box4-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.box5-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.box6-text p{
+     color: whitesmoke;
+     font-size: 5mm;
+     line-height: 1;
+     margin-bottom: 2rem;
+}
+.box7-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.box8-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
 .services{
     background: black;
+    width: 100%;
 }
 .main-text{
     text-align: center ;
@@ -306,15 +694,15 @@ header.sticky{
 }
 .box{
    background: var(--bg-color);
-   padding:  40px 30px; 
+   padding:  40px 30px;
    border-radius: 50px;
    transition: all .45s ease;
    margin-bottom: 20px;
-   
 }
 .box1{
     background: var(--bg-color) ;
     padding: 40px 30px;
+    min-height: 450px;
     border-radius: 50px;
     transition: all .45s ease;
     margin-bottom: 20px;
@@ -322,8 +710,11 @@ header.sticky{
     background-size: cover;
     background-position: center;
 }
+
 .box2{
     background: var(--bg-color);
+    min-width: 20px;
+    min-height: 450px;
     padding: 40px 30px;
     border-radius: 50px;
     transition: all .45s ease;
@@ -331,22 +722,26 @@ header.sticky{
     background-image: url();
     background-size: cover ;
     background-position: center;
+    
 }
 .box3{
     background: var(--bg-color);
     padding: 40px 30px;
     border-radius: 50px;
+    min-height: 450px;
     transition: all .45s ease;
     margin-bottom: 20px;
     background-image: url();
     background-size: cover;
     background-position: center;
 
+
 }
 .box4 {
     background: var(--bg-color);
     padding: 40px 30px;
     border-radius: 50px;
+    min-height: 450px;
     transition: all .45s ease;
     margin-bottom: 20px;
     background-image: url();
@@ -357,6 +752,40 @@ header.sticky{
     background: var(--bg-color);
     padding: 40px 30px;
     border-radius: 50px;
+    min-height: 450px;
+    transition: all .45s ease;
+    margin-bottom: 20px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+.box6{
+    background-color: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 50px;
+    min-height: 450px;
+    transition: all .45s ease;
+    margin-bottom: 20px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+.box7{
+    background-color: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 50px;
+    min-height: 450px;
+    transition: all .45s ease;
+    margin-bottom: 20px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+.box8{
+    background-color: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 50px;
+    min-height: 450px;
     transition: all .45s ease;
     margin-bottom: 20px;
     background-image: url();
@@ -367,25 +796,70 @@ header.sticky{
     font-size: 32px;
     margin-bottom: 20px;
 }
+.box1:hover h3{
+      text-shadow: 2px 2px 2px black;
+      
+}
+.box2:hover h3{
+    text-shadow: 2px 2px 2px black;
+}
+.box3:hover h3{
+    text-shadow: 2px 2px 2px black;
+}
+.box4:hover h3{
+    text-shadow: 2px 2px 2px black;
+}
+.box5:hover h3{
+    text-shadow: 2px 2px 2px black;
+}
+.box6:hover h3{
+    text-shadow: 2px 2px 2px black;
+}
+.box7:hover h3{
+    text-shadow: 2px 2px 2px black;
+}
+.box8:hover h3{
+    text-shadow: 2px 2px 2px black ;
+}
 .box1:hover{
     transform: translateY(-10px);
     cursor: pointer;
+    box-shadow: 10px 10px chocolate;   
 }
 .box2:hover{
-transform: translateY(-10px);
-cursor: pointer;
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
 }
 .box3:hover{
     transform: translateY(-10px);
     cursor: pointer;
+    box-shadow: 10px 10px chocolate;
 }
 .box4:hover{
     transform: translateY(-10px);
     cursor: pointer;
+    box-shadow: 10px 10px chocolate;
 }
 .box5:hover{
     transform: translateY(-10px);
     cursor: pointer;
+    box-shadow: 10px 10px chocolate;  
+}
+.box6:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box7:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
+}
+.box8:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 10px 10px chocolate;
 }
 .s-icons i{
     font-size: 32px;
@@ -422,8 +896,26 @@ cursor: pointer;
     color: whitesmoke;
     margin-bottom: 15px;
 }
-.box5 {
+.box5 h3{
     font-size: 24px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+.box6 h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+.box7 h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+.box8 h3{
+    font-size: 24px ;
     font-weight: 600;
     color: whitesmoke;
     margin-bottom: 15px;
@@ -440,6 +932,7 @@ cursor: pointer;
     line-height: 1.8;
     margin-bottom: 25px;
 }
+
 .box2 p{
     color: whitesmoke;
     font-size: 1rem;
@@ -464,6 +957,25 @@ cursor: pointer;
     line-height: 1.8;
     margin-bottom: 25px;
 }
+.box6 p{
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box7 p{
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box8 p {
+   color: whitesmoke;
+   font-size: 1rem;
+   line-height: 1.8;
+   margin-bottom: 25px;
+}
+
 .read{
     display: inline-block;
     padding: 8px 18px;
@@ -687,9 +1199,7 @@ background: var(--main-color) ;
 }
 
 @media (max-width: 840px){
-    #menu-icon{
-        display: block;
-    }
+   
     .navlist{
         position: absolute;
         top: -1000px;
@@ -702,23 +1212,52 @@ background: var(--main-color) ;
         transition: all .45s ease;
 
     }
-    .navlist a{
-        display: block;
-        margin: 17px;
-        font-size: 20px;
-        transition: all .45s ease;
-        color: var(--text-color);
-    }
-    .navlist a:hover{
-        color: var(--main-color);
-    }
-    .navlist a.active{
-        color: var(--text-color);
-    }
-    .navlist.open{
-        top: 100%;
-    }
+
+   
 }
+
+@media (min-width: 840px){
+    .box1page1 { 
+    grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media(min-width: 840px){
+    .box2page2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media(min-width: 840px){
+    .box3page3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media (min-width: 840px) {
+    .box4page4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media(min-width: 840px) {
+    .box5page5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media(min-width: 840px){
+    .box6page6{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media(min-width: 840px){
+    .box7page7{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media(min-width: 840px){
+    .box8page8{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+
 .flip-card:nth-of-type(2) .flip-card-front,
  .flip-card:nth-of-type(2) .flip-card-back{
     background-image: url(https://r.resimlink.com/yMNoRxH.jpg);
@@ -751,41 +1290,40 @@ background: var(--main-color) ;
  justify-content: center;
  flex-wrap: wrap;
  flex: auto;
+ width: 100%;
  
 }
 
+
 .flip-card-front,.flip-card-back{
-    width: 300px;
-    min-height: 500px;
+    min-height: 600px;
+    width: 400px;
     height: auto;
-    background-color: #000000;
     background-image: url(https://r.resimlink.com/-_GAZT.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: transform 0.4s cubic-bezier(0.5, 0.3, 0.3, 1);
-    float: left;
+    transition: transform 0.4s ease-in-out;
+    
 }
 
 .flip-card{
     float: left;
     padding-left: 40px;
-    padding-bottom: 100px;
-   
+    padding-bottom: 40px;
 }
 
 .flip-card-front{
     transform: rotateY(0deg);
-    bottom: 40px;
+    bottom: 40px;  
 }
 .flip-card-back{
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotateY(180deg);
-    
+    transform: rotateY(180deg);  
 }
 
 .flip-card-front::after,.flip-card-back::after{
@@ -796,12 +1334,10 @@ background: var(--main-color) ;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.6;
-   
+    opacity: 0.4;
 }
 .flip-card-front .inner,.flip-card-back .inner{
     width: 100%;
-    padding: 40px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%) translateZ(60px) scale(0.94);
@@ -809,7 +1345,7 @@ background: var(--main-color) ;
 }
 .inner .icon{
      width: 80px;
-     margin-bottom: 20px;
+     margin-bottom: 50px;
 }
 .inner h3{
     margin-bottom: 8px;
@@ -825,11 +1361,16 @@ background: var(--main-color) ;
      line-height: 28px;
 }
 .flip-card:hover .flip-card-front{
-transform: rotateY(-180deg);
+transform: rotatey(-180deg) ;
+
+
 }
 .flip-card:hover .flip-card-back{
-transform: rotateY(0deg);
+transform: rotatey(0deg);
 }
+
+
+
     </style>
 
 
@@ -858,6 +1399,7 @@ transform: rotateY(0deg);
 
         <div class="bx bx-menu" id="menu-icon"></div> 
     </header>
+   
 
     <!--home section design-->
 <section class="home" id="home">
@@ -868,32 +1410,29 @@ transform: rotateY(0deg);
            </div>
            <h1>Vüqar Mustafayev</h1>
            <h3> Şəki Tarix-Diyarşünaslıq Muzeyi <span> Müdiri </span></h3>
-    
-           <div class="button">
-                <a href="#about" class="btn"> Ətraflı məlumat almaq </a>
-                <a href="#portfolio" class="btn2"><span><i class='bx bx-play'></i></span> Layihələrlə tanış olmaq </a>
 
-           </div>
-         
+           <div class="button">
+                <a href="#about" class="btn"> Mənim haqqımda məlumat almaq </a>    
+                <a href="#portfolio" class="btn2"><span><i class='bx bx-play'></i></span> Layihələrlə tanış olmaq </a>
+           </div> 
+           <br>
+           <div class="button1" href="#about1">
+            <a href="#about1" class="btn1"> Muzey haqqında məlumat almaq </a>
+           </div>  
         </div>
     </div>
 </section>
 
 <!--about section design-->
 <section class="about" id="about">
-    
    <div class="about-img" >  
     <img  align="center" src="https://r.resimlink.com/x8H9_vw5n0uQ.jpg" alt="Teknik Hata Oluştu" > <br><br><br><br>
     <img  align="center" src="https://r.resimlink.com/yMNoRxH.jpg"> <br><br><br><br>
     <img  align="center" src=" https://r.resimlink.com/-_GAZT.jpg"> <br><br><br><br>
-
 </div>
-
    <div class="about-text">
           <h2>Mənim <span>Haqqımda</span></h2>
-       
-          <h4>Şəki Tarix-Diyarşünaslıq Muzeyi Müdiri</h4>
-          <p></p>      
+          <h4>Şəki Tarix-Diyarşünaslıq Muzeyi Müdiri</h4>     
                 <h2 align="center">Təhsil <br><br></h2>
                 <div class="box" align="center">
                     Şəki şəhər 8 no-lu rus orta məktəb * Şəki<br>
@@ -903,13 +1442,11 @@ transform: rotateY(0deg);
                     İstanbul Universiteti Rus dili və ədəbiyyat fakulteti * İstanbul <br>
                        <b>1996–2000</b>   
                 </div>
-              
-               
                 <h2 align="center"> <br> İŞ TƏCRÜBƏSİ <br><br></h2>
                 <div class="box" align="center">
                     Bakı İslam Universiteti * Zaqatala şöbəsi<br>               
                     <b> 2001–2006 </b><br>
-                    Komendant 
+                    Tələbə yataqxanası müdiri
                 </div> 
                 <div class="box" align="center">
                     Baş Pasport, Qeydiyyat və miqrasiya İdarəsi * Şəki şöbəsi<br>
@@ -919,7 +1456,7 @@ transform: rotateY(0deg);
                 <div class="box" align="center">
                     Baxi İtaliyan istilik sistemləri * Bakı  <br>
                     <b> 2013–2018 </b><br>
-                    Audit
+                    Baş menecer
                 </div>
                 <div class="box" align="center">
                     Şəxsi Biznes * Şəki <br>
@@ -932,7 +1469,6 @@ transform: rotateY(0deg);
                      <b> 2021</b><br>
                      Müdir
                 </div>
-              
                 <h2 align="center"><br> HOBBİLƏR <br><br></h2>
                 <div class="box" align="center">
                     Səyahət etmək  
@@ -942,16 +1478,11 @@ transform: rotateY(0deg);
                 </div>
                 <div class="box" align="center">
                     Araşdırma etmək
-                </div>
-         
-          
-          
-   </div>
- 
+                </div> 
+          </div>
 </section>
 <!--AboutMuseum-->
-<section class="about" id="about">
-
+<section class="about" id="about1">
      <div class="about-text">
         <h2 > Şəki Tarix-Diyarşünaslıq Muzeyi <span> Haqqında</span></h2>
         <br>
@@ -960,95 +1491,105 @@ transform: rotateY(0deg);
             Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
             Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
             Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib.
-          
         </div>
     </div>
-
-    <div class="about-img" >
-
+    <div class="about-img">
         <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br>
         <br> <a href="#services"   class="btn"> Layihələrim haqqında məlumat almaq </a> 
-     </div> 
-
-    
-    
+     </div>     
 </section>
+
 
 <!--service section design-->
 <section class="services" id="services">
     <div class="main-text">
         <h2><span>Layihələrim</span>  Haqqında </h2>
-        
     </div>
-
     <div class="services-content">
          <div class="box1">
              <div class="s-icons1">
-                <i class='bx bx-buildings'></i>
+                <i class='bx bxs-arch'></i>
                 
              </div>
-             <h3>Muzeylə bağlı layihələr</h3>
-             <p>Muzeyimizlə bağlı bir çox layihə <br> həyata keçirilmişdir...
-             <br>
-             <a href="#layihe1" class="read">Tanış olmaq</a>  
+             <h3>Muzeyimizdə keçirilən masterklaslar</h3>
+             <p> Muzeyimizdə bir çox fərqli sahədə masterklaslar keçirilməkdədir... </p>
+             <a href="#box1page" class="read" > Daha çox məlumat almaq</a>  
          </div>
 
          <div class="box2">
             <div class="s-icons1">
-                <i class='bx bx-edit-alt' ></i>
+                <i class='bx bx-heart' ></i>
             </div>
-            <h3>Muzeydə keçirilən tədbirlərlə <br> bağlı layihələr</h3>
-            <p>Muzeyimizdə bir çox mövzuda tədbirlər keçirilir ...</p>
-            <a href="#" class="read">Tanış olmaq</a>
+            <h3> Muzeyimizdə anım günləri <br> hörmət ilə anılır </h3>
+            <p> Muzeyimizdə anım günləri yüksək diqqətlə anılır ... </p>
+            <a href="#" class="read"> Daha çox məlumat almaq</a>
         </div>
 
         <div class="box3">
             <div class="s-icons1">
                 <i class='bx bx-code-alt' ></i>
             </div>
-            <h3>Muzeyimizdə keçirilən əlamətdar günlər</h3>
-            <p>Muzeyimizdə əlamətdar günlər yüksək diqqətlə qeyd olunur ...</p>
-            <a href="#" class="read">Daha çox məlumat al </a>
+            <h3>Muzeyimizdə əlamətdar günlər xoş aura ilə qeyd olunur</h3>
+            <p>Muzeyimizdə əlamətdar günlər yüksək qürur ilə qeyd olunur </p>
+            <a href="#" class="read">Daha çox məlumat almaq </a>
         </div>
         
         <div class="box4">
             <div class="s-icons1">
-                <i class='bx bx-code-alt'></i>
+                <i class='bx bxs-book'></i>
             </div>
-            <h3>   </h3>
-            <p>    </p>
-            <a href="#" class="read">Daha çox məlumat al </a>
+            <h3> Muzeyimizə dəvət etdiyimiz qonaqlar </h3>
+            <p>  Muzeyimizə bir-birindən dəyərli bir çox qonaq dəvət edilir ...  </p>
+            <a href="#" class="read">Daha çox məlumat almaq </a>
         </div>
-
-        <br>
-        
+ 
         <div class="box5">
             <div class="s-icons1">
-                <i class='bx bx-code-alt'></i>
+                <i class='bx bxs-movie-play'></i>
             </div>
-            <h3>   </h3>
-            <p>     </p>
+            <h3> Muzeyimizdə milli bayramlarımız qeyd olunur </h3>
+            <p> Muzeyimizdə milli bayramlarımız yüksək sevinc ilə qeyd olunur...  </p>
             <a href="#" class="read">Daha çox məlumat al </a>
         </div>
-      
-    </div>
-    
+       
+        <div class="box6">
+             <div class="s-icons1">
+                <i class='bx bx-network-chart'></i>
+             </div>
+             <h3> Muzeyimizdə regional yarışlar keçirilməkdədir</h3>
+             <p>  Muzeyimizdə regional yarışlar yüksək keyfiyyətdə keçirilir ...  </p>
+             <a href="#" class="read"">Daha çox məlumat al </a>
+        </div>
+
+        <div class="box7">
+              <div class="s-icons1">
+                <i class='bx bx-chalkboard'></i>
+              </div>
+              <h3> Muzeyimizdə dövlət orqanları ilə seminarlar keçirilməkdədir </h3>
+              <p>  Muzeyimizdə dövlət orqanları ilə birlikdə marifləndirici seminarlar keçirilir ...   </p>
+              <a href="#" class="read">Daha çox məlumat al </a>
+        </div>
+
+        <div class="box8">
+                <div class="s-icons1">
+                     <i class='bx bx-directions'></i>
+                </div>
+           <h3> Muzeyimizdə zərərli vərdişələr əleyhinə seminarlar keçirilməkdədir </h3>
+           <p>  Muzeyimizdə gənclərimizin pis vərdişlərdən yayınması məqsədli seminarlar keçirilir ...      </p>
+           <a href="#" class="read">Daha çox məlumat al</a>
+        </div>
+    </div>   
 </section>
 
 <!--Layihe1 section design-->
 <section class="layihe1" id="layihe1">
-       
-       
-  
-
-        
         <div class="flip-card">
             <div class="flip-card-front">
                 <div class="inner">
                     <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
                     <h3>xxxxxxxxxx</h3>
                     <p>
-                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                        xxxxx
                     </p>
                 </div>
             </div>
@@ -1057,7 +1598,7 @@ transform: rotateY(0deg);
                     <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
                     <h3>yyyyyyyyyy</h3>
                     <p>
-                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                        xxxxx
                     </p>
                 </div>
             </div>
@@ -1069,7 +1610,7 @@ transform: rotateY(0deg);
                     <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
                     <h3>xxxxxxxxxx</h3>
                     <p>
-                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                        xxxxx
                     </p>
                 </div>
             </div>
@@ -1078,7 +1619,7 @@ transform: rotateY(0deg);
                     <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
                     <h3>yyyyyyyyyy</h3>
                     <p>
-                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                        xxxxx
                     </p>
                 </div>
             </div>
@@ -1090,7 +1631,7 @@ transform: rotateY(0deg);
                     <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
                     <h3>xxxxxxxxxx</h3>
                     <p>
-                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                        xxxxxx
                     </p>
                 </div>
             </div>
@@ -1099,25 +1640,142 @@ transform: rotateY(0deg);
                     <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
                     <h3>yyyyyyyyyy</h3>
                     <p>
-                        kslndjkcniodcnklncoiencklcneiodelnieoncoecnein
+                           xxxxxx
                     </p>
                 </div>
             </div>
         </div>
+</section> 
+<section class="box1page1">
+    <div class="box1-text">
+       <h2 > Muzeyimizdə keçirilən <span> masterklaslar </span></h2>
+       <br>
+        <br>
+       <div class="box" >
+           Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+           Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+           Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib.
+         
+       </div>
+   </div>
+   <div class="box1-img" >
+       <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+    </div>     
+</section>
 
-     
-      
-       
-       
+<!--section box2 page2 tasarım-->
+<section class="box2page2">
+    <div class="box2-img" >
+        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+     </div>   
+     <div class="box2-text">
+        <h2> Muzeyimizdə <span>anım günləri</span> hörmət ilə anılır</h2> <br><br>
+        <div class="box">
+            Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib.   
+        </div>
+     </div>
+</section>
+
+<!--section box3 page3 tasarım-->
+<section class="box3page3">
+    <div class="box3-text">
+        <h2> Muzeyimizdə <span>əlamətdar günlər </span> xoş aura ilə qeyd olunur</h2> <br><br>
+         <div class="box">
+            Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib.
+         </div>
+    </div>
+    <div class="box3-img">
+        <img  src="https://r.resimlink.com/EQPzf.jpg">  
+    </div>
+</section>
+
+<!--section box4 page4 tasarım-->
+<section class="box4page4">
+    
+    <div class="box4-img" >
+        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+     </div> 
+    <div class="box4-text">
+          <h2> Muzeyimizə dəvət etdiyimiz <span> qonaqlar </span> </h2> <br><br>
+          <div class="box">
+            Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib. 
+        
+        </div>
+    </div>
+</section>          
+
+
+<!--section box5 page5 tasarım-->
+<section class="box5page5">
+     <div class="box5-text">
+          <h2> Muzeyimizdə <span>milli bayramlarımız</span> qeyd olunur</h2> <br><br>
+          <div class="box">
+            Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib. 
+         
+        </div>
+     </div>
+     <div class="box2-img" >
+        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+     </div> 
+</section>
+
+<!--section box6 page6 tasarim-->
+<section class="box6page6">
+    <div class="box6-img" >
+        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+     </div> 
+    <div class="box6-text">
+           <h2>Muzeyimizdə <span>regional yarışlar </span> keçirilməkdədir</h2> <br> <br>
+           <div class="box">
+            Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib. 
+         
+        </div>
+    </div>
+</section>
+
+<!--section box7 page7 tasarim-->
+<section class="box7page7">
+    <div class="box7-text">
+          <h2>Muzeyimizdə <span>dövlət orqanları </span> ilə seminarlar keçirilməkdədir</h2> <br><br>
+          <div class="box"> Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib. 
+         </div>
+    </div>
+    <div class="box7-img" >
+        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+     </div>
+</section>
+
+<!--section box8 page8 tasarim-->
+<section class="box8page8">
+    <div class="box8-img" >
+        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+     </div>
+    <div class="box8-text">
+          <h2>Muzeyimizdə <span>zərərli vərdişələr</span> əleyhinə seminarlar keçirilməkdədir</h2> <br><br>
+          <div class="box">Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
+            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
+            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib. 
+         </div>
+    </div>
 </section>
 
  <!---portfolio section design-->
 <section class="portfolio" id="portfolio">
-    <div class="main-text">
-        
+    <div class="main-text">  
         <h2><span>Sonuncu </span>  Layihələrim </h2>     
     </div>
-
     <div class="portfolio-content">
         <div class="row">
             <img src="https://r.resimlink.com/-_GAZT.jpg" >
@@ -1145,8 +1803,6 @@ transform: rotateY(0deg);
                 <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
-        
-        
     </div>
 </section>
 <!---portfolio section design-->
@@ -1154,7 +1810,7 @@ transform: rotateY(0deg);
 <section class="contact" id="contact">
      <div class="contact-text">
          <h2>Mənimlə <span> əlaqə qurmaq üçün</span></h2>
-         <p>Turizim Agentliyi Əməkdaşı</p>
+         <p>Dövlət turizm əməkdaşı</p>
          <div class="list">
             <li><a href="#">+994703530503</a></li>
             <li><a href="#">vugar533@gmail.com</a></li>
@@ -1166,9 +1822,7 @@ transform: rotateY(0deg);
              <a href="https://instagram.com/0omarmustafa0?igshid=ZDdkNTZiNTM="><i class='bx bxl-instagram' ></i></a>
              <a href="#"><i class='bx bxl-twitter' ></i></a>
              <a href="#"><i class='bx bxl-youtube' ></i></a>
-         </div>
-
-       
+         </div>  
      </div>
 </section>
 
@@ -1178,13 +1832,9 @@ transform: rotateY(0deg);
    <div class="last-text">
        <p>Tüm Haqları Vüqar Mustafayevə aiddir.Bütün haqları © 2023 qorunur</p>
    </div>
-
    <div class="top">
          <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
    </div>
-</section>
-
-
-     
+</section>   
 </body>
 </html>
