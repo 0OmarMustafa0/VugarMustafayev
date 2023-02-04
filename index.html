@@ -179,10 +179,12 @@ section
     max-width: 1200px;
     margin: 0px auto;
 }
+
 .btn
 {
   display: inline-block;
   padding: 10px 20px;
+
   background: var(--main-color);
   border-radius: 50px;
   color: var(--text-color);
@@ -1258,6 +1260,8 @@ background: var(--main-color) ;
  }
 
 
+
+
 .flip-card:nth-of-type(2) .flip-card-front,
  .flip-card:nth-of-type(2) .flip-card-back{
     background-image: url(https://r.resimlink.com/yMNoRxH.jpg);
@@ -1368,6 +1372,55 @@ transform: rotatey(-180deg) ;
 .flip-card:hover .flip-card-back{
 transform: rotatey(0deg);
 }
+.galeri{
+    height: 600px;
+    width: auto;
+}
+.box1-img{
+    display: flex;
+    height: 30rem;
+    gap: 0.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.box1-img > div{
+    flex: 1;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.box1-img > div:hover{
+    flex: 10;
+}
+.box8-img{
+    
+    display: flex;
+    height: 20rem;
+    gap: 0.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.box8-img > div {
+    flex: 1;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.box8-img > div:hover{
+    flex: 5;
+}
+
+
 
 
 
@@ -1409,7 +1462,7 @@ transform: rotatey(0deg);
              <span class="iki"> Mən </span>
            </div>
            <h1>Vüqar Mustafayev</h1>
-           <h3> Şəki Tarix-Diyarşünaslıq Muzeyi <span> Müdiri </span></h3>
+           <h3> Şəki Tarix - Diyarşünaslıq Muzeyi <span> Müdiri </span></h3>
 
            <div class="button">
                 <a href="#about" class="btn"> Mənim haqqımda məlumat almaq </a>    
@@ -1432,7 +1485,7 @@ transform: rotatey(0deg);
 </div>
    <div class="about-text">
           <h2>Mənim <span>Haqqımda</span></h2>
-          <h4>Şəki Tarix-Diyarşünaslıq Muzeyi Müdiri</h4>     
+          <h4>Şəki Tarix - Diyarşünaslıq Muzeyi Müdiri</h4>     
                 <h2 align="center">Təhsil <br><br></h2>
                 <div class="box" align="center">
                     Şəki şəhər 8 no-lu rus orta məktəb * Şəki<br>
@@ -1484,13 +1537,12 @@ transform: rotatey(0deg);
 <!--AboutMuseum-->
 <section class="about" id="about1">
      <div class="about-text">
-        <h2 > Şəki Tarix-Diyarşünaslıq Muzeyi <span> Haqqında</span></h2>
+        <h2 > Şəki Tarix - Diyarşünaslıq Muzeyi <span> Haqqında</span></h2>
         <br>
          <br>
         <div class="box" >
-            Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
-            Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
-            Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib.
+            Şəki Tarix-Diyarşünaslıq muzeyi haqqında məlumat
+            Muzeylər 1925-ci ildən Maarif  Komissarlığının əmri ilə fəaliyyətə başlayıb. Şəkidə Tarix-Diyarşünaslıq Muzeyi 1958-ci ildən müxtəlif  binalarda fəaliyyət göstərmişdir. Şəki Tarix-Diyarşünaslıq Muzeyi 1895-ci ildə kazarma məqsədilə tikilmiş binada 1980-ci ildən fəaliyyət göstərir. Muzey 924km2 sahədə yerləşir. Muzeydə 2461 eksponat vardır. Ekspozisiya zallarında 1000 eksponat nümayiş olunur.
         </div>
     </div>
     <div class="about-img">
@@ -1542,7 +1594,7 @@ transform: rotatey(0deg);
             <p>  Muzeyimizə bir-birindən dəyərli bir çox qonaq dəvət edilir ...  </p>
             <a href="#" class="read">Daha çox məlumat almaq </a>
         </div>
- 
+
         <div class="box5">
             <div class="s-icons1">
                 <i class='bx bxs-movie-play'></i>
@@ -1586,7 +1638,7 @@ transform: rotatey(0deg);
         <div class="flip-card">
             <div class="flip-card-front">
                 <div class="inner">
-                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <img src="" class="icon" />
                     <h3>xxxxxxxxxx</h3>
                     <p>
                         xxxxx
@@ -1595,7 +1647,7 @@ transform: rotatey(0deg);
             </div>
             <div class="flip-card-back">
                 <div class="inner">
-                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <img src="" class="icon" />
                     <h3>yyyyyyyyyy</h3>
                     <p>
                         xxxxx
@@ -1607,7 +1659,7 @@ transform: rotatey(0deg);
         <div class="flip-card">
             <div class="flip-card-front">
                 <div class="inner">
-                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <img src="" class="icon" />
                     <h3>xxxxxxxxxx</h3>
                     <p>
                         xxxxx
@@ -1616,7 +1668,7 @@ transform: rotatey(0deg);
             </div>
             <div class="flip-card-back">
                 <div class="inner">
-                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <img src="" class="icon" />
                     <h3>yyyyyyyyyy</h3>
                     <p>
                         xxxxx
@@ -1628,7 +1680,7 @@ transform: rotatey(0deg);
         <div class="flip-card">
             <div class="flip-card-front">
                 <div class="inner">
-                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <img src="" class="icon" />
                     <h3>xxxxxxxxxx</h3>
                     <p>
                         xxxxxx
@@ -1637,7 +1689,7 @@ transform: rotatey(0deg);
             </div>
             <div class="flip-card-back">
                 <div class="inner">
-                    <img src="https://i.imgur.com/aJauAJV.png" class="icon" />
+                    <img src="" class="icon" />
                     <h3>yyyyyyyyyy</h3>
                     <p>
                            xxxxxx
@@ -1651,16 +1703,23 @@ transform: rotatey(0deg);
        <h2 > Muzeyimizdə keçirilən <span> masterklaslar </span></h2>
        <br>
         <br>
-       <div class="box" >
-           Şəki Tarix-Diyarşünasliq Muzeyi 1925-ci ilin sentyabr ayında yaradılmışdır.
-           Muzeydə Şəki şəhərinin tarixini, mədəniyyətini, qədim sənət növlərini, etnoqrafiyasını, mətbəxini əks etdirən 5000-dən çox eksponat nümayiş etdirilir. Bunlardan 3000-ə yaxını ekspozisiya zallarında nümayiş etdirilir.Eyni zamanda Böyük vətən müharibəsi (1941-1945-ci illər), Əfqanıstan və Qarabağ müharibələrində şəkililərin şücaətini dair stendlər quraşdırılmışdır.
-           Müxtəlif illərdə müxtəlif binalarda yerləşən R.Əfəndiyev adına Şəki Tarix-Diyarşünaslıq Muzeyi hazırda Şəkinin səfalı bir guşəsində - Qala Divarları arasında olan binada yerləşib.
-         
+       <div class="box"  align="center">
+          <h3>Təkəlduz sənəti</h3>
+          Muzeyimizde dekorativ tətbiqi sənət növlərinden biri olan tekelduz seneti ile əlaqədar "Təkəldüz sənətinin yaşadılması və gələcək nəsillərə ötürülməsi " adlı master-klass təşkil edilmişdir. Master klass tanınmış Təkəldüz sənəti ustası Səyalı xanım və Nərgiz Əzizova tərəfindən keçirilmişdir. 19-21 oktyabr tarixlərində 3 gün ərzində davam etmişdir. Şəki Pedoqoji Kollecinin"Təsviri incəsənət " 4-cü kurs tələbələri master klasada iştirak etmişlər. Fəal tələbələr Təltifnamə ilə təltif olunmuşdur.
+            <br> <br>
+            <a  class="btn" href="https://az.wikipedia.org/wiki/T%C9%99k%C9%99lduz_tikm%C9%99" target="_blank"> <button class="btn">Təkəlduz sənəti haqqında məlumat almaq</button></a>
+
        </div>
    </div>
    <div class="box1-img" >
-       <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+    <div align="center" style="background-image: url('https://r.resimlink.com/dsJU4nHSQ_kt.jpg');"></div>
+    <div align="center" style="background-image: url('https://r.resimlink.com/RiHdZT0e.jpg');"></div>
+    <div align="center" style="background-image: url('https://r.resimlink.com/Ff6vr.jpg');"></div> 
+    <div align="center" style="background-image: url('https://r.resimlink.com/fxwvJz_6Rl8e.jpg');"></div>
     </div>     
+</section>
+<section class="box1page2">
+         
 </section>
 
 <!--section box2 page2 tasarım-->
@@ -1760,7 +1819,9 @@ transform: rotatey(0deg);
 <!--section box8 page8 tasarim-->
 <section class="box8page8">
     <div class="box8-img" >
-        <img  src="https://r.resimlink.com/EQPzf.jpg"  > <br><br> 
+        <div style="background-image: url('https://r.resimlink.com/x8H9_vw5n0uQ.jpg');"></div>
+         <div style="background-image: url('https://r.resimlink.com/x8H9_vw5n0uQ.jpg');"></div>
+         <div style="background-image: url('https://r.resimlink.com/x8H9_vw5n0uQ.jpg');"></div> <br><br> 
      </div>
     <div class="box8-text">
           <h2>Muzeyimizdə <span>zərərli vərdişələr</span> əleyhinə seminarlar keçirilməkdədir</h2> <br><br>
@@ -1770,7 +1831,13 @@ transform: rotatey(0deg);
          </div>
     </div>
 </section>
-
+<section class="galeri">
+    <div class="galeri1">
+         <div style="background-image: url('https://r.resimlink.com/x8H9_vw5n0uQ.jpg');"></div>
+         <div style="background-image: url('https://r.resimlink.com/x8H9_vw5n0uQ.jpg');"></div>
+         <div style="background-image: url('https://r.resimlink.com/x8H9_vw5n0uQ.jpg');"></div>
+    </div>
+  </section>
  <!---portfolio section design-->
 <section class="portfolio" id="portfolio">
     <div class="main-text">  
@@ -1835,6 +1902,6 @@ transform: rotatey(0deg);
    <div class="top">
          <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
    </div>
-</section>   
+</section>  
 </body>
 </html>
