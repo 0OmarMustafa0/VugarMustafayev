@@ -98,9 +98,9 @@ section
     height: 100vh;
     width: 100%;
     background-color: black;
-    background-image: url();
+    background-image: url('https://r.resimlink.com/3nYwsF4TGu.gif');
+    background-position: center center;
     background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -184,7 +184,6 @@ section
 {
   display: inline-block;
   padding: 10px 20px;
-
   background: var(--main-color);
   border-radius: 50px;
   color: var(--text-color);
@@ -194,6 +193,7 @@ section
   transition:  all .45s ease;
   margin-right: 10px;
   margin-bottom: 15px;
+  
 }
 .btn1{
     display: inline-block;
@@ -204,7 +204,8 @@ section
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
-     transition: all .45s ease; 
+    transition: all .45s ease; 
+    box-shadow: 5px 5px 5px black;
 }
 .btn:hover{
     transform: scale(0.9);
@@ -259,12 +260,23 @@ header.sticky{
     width: 100%;
     
 }
-
 .box1page1{
     display: grid; 
     align-items: center;
     gap: 3rem;
     background-color: black;
+    width: auto;
+    width: 100%;
+    box-shadow: 0px -25px 100px chocolate;
+}
+.box1-2page{
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    background-image: url('https://r.resimlink.com/nqGbFS9-dcW.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: auto;
     width: 100%;
     box-shadow: 0px -25px 100px chocolate;
@@ -286,9 +298,7 @@ header.sticky{
     width: auto;
     width: 100%;
     box-shadow: 0px -25px 100px chocolate;
- 
-}
-
+} 
 .box4page4{
     display: grid;
     align-items: center;
@@ -349,7 +359,6 @@ header.sticky{
     border-radius: 100px;
     background-position: left top; 
 }
-
 .box1-img img{
     max-width: 600px;
     height: auto;
@@ -468,6 +477,10 @@ header.sticky{
     font-size: var(--h2-font);
     line-height: 1;
 }
+.box1-2text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
 .box2-text h2{
     font-size: var(--h2-font);
     line-height: 1;
@@ -503,6 +516,12 @@ header.sticky{
     box-shadow: 10px 10px 5px black;
 }
 .box1-text .box{
+    margin-bottom: 20px;
+    border-radius: 100;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px #ffffff1a;
+}
+.box1-2text .box{
     margin-bottom: 20px;
     border-radius: 100;
     background-color: var(--main-color);
@@ -558,6 +577,13 @@ header.sticky{
     margin: 15px 0 30px; 
 }
 .box1-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.box1-2text h4{
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
@@ -621,6 +647,12 @@ header.sticky{
     margin-bottom: 2rem;
 }
 .box1-text p{
+    color: whitesmoke;
+    font-size: 5mm;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.box1-2text p{
     color: whitesmoke;
     font-size: 5mm;
     line-height: 1;
@@ -977,7 +1009,6 @@ header.sticky{
    line-height: 1.8;
    margin-bottom: 25px;
 }
-
 .read{
     display: inline-block;
     padding: 8px 18px;
@@ -1007,10 +1038,6 @@ align-items: center;
 gap: 2.5rem;
 margin-top: 5rem;   
 }
-
-
-
-
 .row{
  position: relative;
  overflow: hidden;
@@ -1062,7 +1089,6 @@ margin-top: 5rem;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-
 }
 .row:hover img{
     transform: scale(1.1);
@@ -1070,7 +1096,6 @@ margin-top: 5rem;
 .row:hover .layer{
  height: 100%;   
 }
-
 .contact{
     background:var(--second-bg-color) ;
     display: grid;
@@ -1083,7 +1108,6 @@ margin-top: 5rem;
     margin: 18px 0;
     font-size: 20px;
     font-weight: 600;
-
 }
 .contact-text h2{
     font-size: 15mm;
@@ -1397,6 +1421,28 @@ transform: rotatey(0deg);
 .box1-img > div:hover{
     flex: 10;
 }
+.box1-2img{
+    display: flex;
+    height: 30rem;
+    gap: 0.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    
+}
+.box1-2img > div{
+    flex: 1;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.box1-2img > div:hover{
+    flex: 5;
+}
 .box8-img{
     
     display: flex;
@@ -1698,6 +1744,7 @@ transform: rotatey(0deg);
             </div>
         </div>
 </section> 
+<!--section box1page1 tasarim -->
 <section class="box1page1">
     <div class="box1-text">
        <h2 > Muzeyimizdə keçirilən <span> masterklaslar </span></h2>
@@ -1718,8 +1765,25 @@ transform: rotatey(0deg);
     <div align="center" style="background-image: url('https://r.resimlink.com/fxwvJz_6Rl8e.jpg');"></div>
     </div>     
 </section>
-<section class="box1page2">
-         
+<!--section box1-2page tasarim-->
+<section class="box1-2page">
+    <div class="box1-2text">
+        <br>
+         <br>
+        <div class="box"  align="center">
+           <h3>Piroqrafiya sənəti</h3>
+           Memar, rəssam, pedaqoq ən əsası sənətinin mahir ustası olan Yaşar Nəbiyevin muzeyimizdə yandırma üsulu (piroqrafiya) ilə rəsmlərin hazırlanması metodikası ilə bağlı master klası keçirildi. Yaşar müəllim bu sənətlə maraqlanmaq, bu sənəti öyrənmək, yaşatmaq istəyən şəxslərə ödənişsiz olaraq sənətinin sirlərini paylaşdı. Master klasın iştirakçıları öyrəndiklərini əyani olaraq tətbiq etdilər.
+             <br> <br>
+             <a  class="btn" href="https://www.google.com/search?q=piroqrafiya+s%C9%99n%C9%99ti&sxsrf=AJOqlzXijCxY4fHRWyGz_umQb3cfAfVmeg%3A1675587358046&ei=Hm_fY_XBAp6Uxc8Py9S26Ao&ved=0ahUKEwj1yJCqgf78AhUeSvEDHUuqDa0Q4dUDCA8&uact=5&oq=piroqrafiya+s%C9%99n%C9%99ti&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCEQoAEQCjIHCCEQoAEQCjIHCCEQoAEQCjoKCAAQRxDWBBCwAzoHCCMQsAIQJ0oECEEYAEoECEYYAFDBAljdR2DJSmgGcAF4AIAB3AGIAaUVkgEGMC4xNS4xmAEAoAEByAEIwAEB&sclient=gws-wiz-serp" target="_blank"> <button class="btn">Piroqrafiya sənəti haqqında məlumat almaq</button></a>
+ 
+        </div>
+    </div>
+    <div class="box1-2img" >
+     <div align="center" style="background-image: url('https://r.resimlink.com/dsJU4nHSQ_kt.jpg');"></div>
+     <div align="center" style="background-image: url('https://r.resimlink.com/RiHdZT0e.jpg');"></div>
+     <div align="center" style="background-image: url('https://r.resimlink.com/Ff6vr.jpg');"></div> 
+     <div align="center" style="background-image: url('https://r.resimlink.com/fxwvJz_6Rl8e.jpg');"></div>
+     </div>            
 </section>
 
 <!--section box2 page2 tasarım-->
